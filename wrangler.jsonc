@@ -1,0 +1,22 @@
+{
+  // ───────────────────────────────────────────────────────────
+  // Balance & Growth Advisory — configurazione di deploy
+  // Cloudflare Workers · static assets (sito statico, nessun build)
+  //
+  // Per pubblicare le modifiche:   npx wrangler deploy
+  // (la prima volta:               npx wrangler login   )
+  //
+  // "name" coincide col Worker già esistente: il deploy AGGIORNA
+  // il sito live e MANTIENE il dominio balanceandgrowth.com collegato.
+  // ───────────────────────────────────────────────────────────
+  "name": "balanceandgrowth",
+  "workers_dev": false,
+  "compatibility_date": "2026-06-13",
+  "assets": {
+    "directory": "./public/"
+  },
+  "routes": [
+    { "pattern": "balanceandgrowth.com", "custom_domain": true },
+    { "pattern": "www.balanceandgrowth.com", "custom_domain": true }
+  ]
+}
