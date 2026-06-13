@@ -74,6 +74,7 @@ npx wrangler deploy
 ## Stato del lavoro
 
 - ✅ Struttura tecnica e organizzativa (questa cartella).
+- ✅ Repo GitHub: https://github.com/Mikiborzi/balance-growth-advisory (pubblico).
 - ✅ Deploy su Cloudflare Workers (Worker: `balanceandgrowth`, account Michele).
   - `balanceandgrowth.com` e `www.balanceandgrowth.com` configurati come custom domain.
   - `workers_dev: false` nel `wrangler.jsonc`.
