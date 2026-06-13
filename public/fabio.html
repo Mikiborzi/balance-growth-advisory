@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fabio Gino Merli — Balance &amp; Growth Advisory</title>
+<meta name="description" content="Fabio Gino Merli, ideatore e fondatore di Balance & Growth Advisory. 25 anni come CFO e Direttore Generale in gruppi nazionali e multinazionali." />
+<link rel="canonical" href="https://www.balanceandgrowth.com/fabio.html" />
+<meta name="theme-color" content="#11302E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%2311302E'/%3E%3Crect%20x='6'%20y='14'%20width='20'%20height='2'%20rx='1'%20fill='%23C9A05A'/%3E%3Cpath%20d='M16%2017%20L20%2024%20L12%2024%20Z'%20fill='%23B07D2B'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#11302E;--ink-2:#0B2422;--paper:#F4F1E9;--paper-2:#ECE7DA;
+    --brass:#B07D2B;--brass-soft:#C9A05A;--green:#2E6B47;
+    --text-soft:#445B57;--on-ink-soft:#A9C0BB;--line:#D8D1C0;--line-ink:rgba(201,160,90,.22);
+    --serif:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --maxw:1140px;--gutter:clamp(20px,5vw,64px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--brass);color:#fff}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);display:inline-flex;align-items:center;gap:.6em}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--brass);display:inline-block}
+
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px var(--gutter);transition:background .4s ease,padding .4s ease,border-color .4s ease;border-bottom:1px solid transparent}
+  header.nav.scrolled{background:rgba(244,241,233,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-block:13px}
+  .brand{font-family:var(--serif);font-size:1.16rem;font-weight:600;letter-spacing:.01em;color:var(--paper);transition:color .4s ease;white-space:nowrap}
+  .brand .amp{color:var(--brass-soft);font-style:italic;padding-inline:.06em}
+  .brand .sfx{font-weight:400;font-style:italic;opacity:.78}
+  header.nav.scrolled .brand{color:var(--ink)}
+  .nav-links{display:flex;gap:26px;align-items:center}
+  .nav-links a{font-size:.9rem;color:var(--on-ink-soft);transition:color .25s ease}
+  header.nav.scrolled .nav-links a{color:var(--text-soft)}
+  .nav-links a:hover{color:var(--brass)}
+  .nav-cta{font-size:.82rem;font-family:var(--mono);letter-spacing:.04em;border:1px solid var(--brass);color:var(--brass)!important;padding:9px 16px;border-radius:2px;transition:all .25s ease}
+  .nav-cta:hover{background:var(--brass);color:#fff!important}
+  .nav-toggle{display:none}
+
+  .hero-profile{position:relative;background:radial-gradient(120% 90% at 80% 0%, #163C39 0%, var(--ink) 42%, var(--ink-2) 100%);color:var(--paper);min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:80px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center;width:100%}
+  .back-link{font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;color:var(--brass-soft);display:inline-flex;align-items:center;gap:.5em;margin-bottom:28px;transition:color .2s}
+  .back-link:hover{color:var(--brass)}
+  .hero-profile h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;letter-spacing:-.012em;margin:16px 0 8px}
+  .role{font-family:var(--mono);font-size:.82rem;letter-spacing:.1em;color:var(--brass-soft);text-transform:uppercase;margin-bottom:32px}
+  .motto{font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,1.7vw,1.32rem);line-height:1.5;color:var(--on-ink-soft);border-left:2px solid var(--brass);padding-left:20px}
+  .motto cite{display:block;font-family:var(--mono);font-size:.7rem;font-style:normal;letter-spacing:.1em;color:var(--brass-soft);text-transform:uppercase;margin-top:14px}
+
+  .photo-wrap{position:relative;max-width:440px;margin:0 auto;aspect-ratio:3/4}
+  .photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+  .photo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 55%,rgba(11,36,34,.7) 100%)}
+
+  section{padding:clamp(64px,9vw,120px) 0}
+  .bio-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,5vw,72px);align-items:start}
+  .bio-text p{color:var(--text-soft);font-size:1.04rem;margin-bottom:18px;max-width:58ch}
+  .section-title{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,3.2vw,2.6rem);line-height:1.1;margin:14px 0 24px}
+
+  .timeline-section{background:var(--ink);color:var(--paper)}
+  .timeline-section .eyebrow{color:var(--brass-soft)}
+  .timeline-section .eyebrow::before{background:var(--brass-soft)}
+  .timeline-section .section-title{color:var(--paper);margin-bottom:40px}
+  .timeline{border-left:1px solid var(--line-ink);padding-left:28px}
+  .tl{position:relative;padding:15px 0}
+  .tl::before{content:"";position:absolute;left:-33px;top:21px;width:9px;height:9px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 4px var(--ink)}
+  .tl .yr{font-family:var(--mono);font-size:.73rem;letter-spacing:.07em;color:var(--brass-soft)}
+  .tl .co{font-family:var(--serif);font-size:1.22rem;color:var(--paper);margin:3px 0 1px}
+  .tl .ro{font-size:.9rem;color:var(--on-ink-soft)}
+
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .tag-pill{font-family:var(--mono);font-size:.71rem;letter-spacing:.05em;color:var(--text-soft);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+
+  .cta-section{text-align:center;background:var(--paper-2)}
+  .cta-section .section-title{margin-bottom:12px}
+  .cta-section p{color:var(--text-soft);font-size:1.04rem;margin-bottom:30px}
+  .btn{font-family:var(--mono);font-size:.86rem;letter-spacing:.03em;padding:14px 26px;border-radius:2px;transition:all .25s ease;display:inline-flex;align-items:center;gap:.5em}
+  .btn-primary{background:var(--brass);color:#fff}
+  .btn-primary:hover{background:var(--brass-soft);transform:translateY(-2px)}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  footer{background:var(--ink-2);color:var(--on-ink-soft);padding:40px 0;font-size:.84rem}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  footer .fbrand{font-family:var(--serif);color:var(--paper);font-size:1.05rem}
+  footer .fbrand .amp{color:var(--brass-soft);font-style:italic}
+  footer .note{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em}
+
+  @media(max-width:880px){
+    .hero-grid{grid-template-columns:1fr;gap:40px}
+    .photo-wrap{max-width:300px;aspect-ratio:1/1}
+    .bio-grid{grid-template-columns:1fr}
+    .nav-links{display:none}
+    .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 0}
+    .nav-links.open a{padding:13px var(--gutter);color:var(--ink)}
+    .nav-toggle{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+    .nav-toggle span{width:24px;height:2px;background:var(--paper);transition:background .3s}
+    header.nav.scrolled .nav-toggle span{background:var(--ink)}
+    .brand .sfx{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto!important}
+    .reveal{opacity:1!important;transform:none!important;transition:none!important}
+    .btn:hover{transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="/" class="brand">Balance <span class="amp">&amp;</span> Growth <span class="sfx">Advisory</span></a>
+  <nav class="nav-links" id="navlinks">
+    <a href="/#servizi">Servizi</a>
+    <a href="/#clienti">Clienti</a>
+    <a href="/#brand">Il brand</a>
+    <a href="/#formazione">Formazione</a>
+    <a href="/#contatto" class="nav-cta">Parliamone</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<section class="hero-profile">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <a href="/#brand" class="back-link">← Il brand</a>
+      <span class="eyebrow">Fondatore</span>
+      <h1>Fabio Gino Merli</h1>
+      <div class="role">CFO &amp; Direttore Generale · Ideatore e Fondatore</div>
+      <blockquote class="motto">
+        La chiarezza dei numeri consente l'adozione di strategie di crescita e sviluppo; la tempestività con cui gli strumenti di controllo consentono le correzioni di rotta sono fondamentali per ogni impresa.
+        <cite>Fabio Gino Merli</cite>
+      </blockquote>
+    </div>
+    <div class="photo-wrap reveal">
+      <img src="/Img/Foto Fabio Gino Merli.png" alt="Fabio Gino Merli" />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="bio-grid">
+      <div class="reveal">
+        <span class="eyebrow">Profilo</span>
+        <h2 class="section-title">Chi ha gestito l'azienda dall'interno, prima di consigliarla.</h2>
+        <div class="bio-text">
+          <p>Fabio Gino Merli è ideatore e fondatore di Balance &amp; Growth Advisory. Venticinque anni di carriera come CFO e Direttore Generale in gruppi nazionali e multinazionali, nei settori manifatturiero e dei servizi.</p>
+          <p>Ha attraversato dall'interno le fasi più delicate della vita d'impresa — crescita accelerata, ristrutturazione, riorganizzazione, apertura a nuovi mercati — acquisendo una visione integrata dei processi economico-finanziari e organizzativi.</p>
+          <p>Laurea in Economia e Commercio all'Università degli Studi di Torino. Da questa esperienza diretta nasce il modello operativo di Balance &amp; Growth Advisory: analisi reale, strumenti concreti, strategie condivise.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Aree di competenza</span>
+        <div class="tags">
+          <span class="tag-pill">Controllo di gestione</span>
+          <span class="tag-pill">Bilancio consolidato</span>
+          <span class="tag-pill">Tesoreria &amp; finanza</span>
+          <span class="tag-pill">Membro OdV · D.Lgs. 231</span>
+          <span class="tag-pill">US GAAP · Sarbanes-Oxley</span>
+          <span class="tag-pill">Budgeting &amp; forecasting</span>
+          <span class="tag-pill">CFO Fractional</span>
+          <span class="tag-pill">Direzione generale</span>
+          <span class="tag-pill">Internazionalizzazione</span>
+          <span class="tag-pill">Ristrutturazione aziendale</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="timeline-section">
+  <div class="wrap">
+    <span class="eyebrow reveal">Percorso professionale</span>
+    <h2 class="section-title reveal">25 anni di gestione diretta.</h2>
+    <div class="timeline reveal">
+      <div class="tl">
+        <div class="yr">2021 — oggi</div>
+        <div class="co">Balance &amp; Growth Advisory</div>
+        <div class="ro">Fondatore · consulenza strategica, CFO Fractional, sviluppo d'impresa per le PMI italiane</div>
+      </div>
+      <div class="tl">
+        <div class="yr">2018 — 2021</div>
+        <div class="co">Angelo Cappellini &amp; C.</div>
+        <div class="ro">Direttore Generale · budgeting, forecasting, controllo di gestione</div>
+      </div>
+      <div class="tl">
+        <div class="yr">2007 — 2018</div>
+        <div class="co">Gruppo Lattonedil</div>
+        <div class="ro">Chief Financial Officer · 10 società, team Italia + estero di 38 persone · membro OdV 231</div>
+      </div>
+      <div class="tl">
+        <div class="yr">2006 — 2007</div>
+        <div class="co">Fitness First Italia</div>
+        <div class="ro">Finance Manager · reporting verso HQ Londra</div>
+      </div>
+      <div class="tl">
+        <div class="yr">2000 — 2004</div>
+        <div class="co">Adecco Italia Holding</div>
+        <div class="ro">Direttore Amministrazione e Finanza · reporting US GAAP, Sarbanes-Oxley</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="wrap">
+    <span class="eyebrow reveal" style="justify-content:center">Parliamone</span>
+    <h2 class="section-title reveal">Costruiamo insieme la struttura giusta per la tua impresa.</h2>
+    <p class="reveal">Raccontaci la situazione. Analizziamo il contesto e generiamo la risposta più adeguata.</p>
+    <a href="/#contatto" class="btn btn-primary reveal">Contatta Balance &amp; Growth →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">Balance <span class="amp">&amp;</span> Growth Advisory</div>
+    <div class="note">Balance &amp; Growth Advisory · © 2026</div>
+  </div>
+</footer>
+
+<script>
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  const toggle=document.getElementById('navToggle');
+  const links=document.getElementById('navlinks');
+  toggle.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i%6,5)*55)+'ms';io.observe(el);});
+</script>
+</body>
+</html>
