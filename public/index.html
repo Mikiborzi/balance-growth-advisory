@@ -133,6 +133,16 @@
   .fz-close{margin-top:30px;font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2.1vw,1.45rem);color:var(--text-soft);max-width:60ch}
   .fz-close b{font-style:normal;color:var(--brass);font-weight:500}
 
+  .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:6px}
+  .team-card{border:1px solid var(--line);background:var(--paper);overflow:hidden;transition:border-color .25s ease}
+  .team-card:hover{border-color:var(--brass)}
+  .team-card img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;display:block}
+  .team-card-body{padding:28px clamp(20px,2.6vw,36px) 32px}
+  .team-card h3{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin-bottom:4px}
+  .team-card .tc-role{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--brass);text-transform:uppercase;margin-bottom:14px}
+  .team-card p{color:var(--text-soft);font-size:.97rem;margin-bottom:18px}
+  .team-card a.lnk{font-family:var(--mono);font-size:.8rem;letter-spacing:.03em;color:var(--brass);border-bottom:1px solid transparent;transition:border-color .2s}
+  .team-card a.lnk:hover{border-color:var(--brass)}
   .partners-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:6px}
   .partner{border:1px solid var(--line);padding:32px clamp(24px,3vw,38px);background:var(--paper);transition:border-color .25s ease}
   .partner:hover{border-color:var(--brass)}
@@ -164,6 +174,7 @@
 
   @media(max-width:980px){.services-grid{grid-template-columns:1fr}}
   @media(max-width:880px){
+    .team-grid{grid-template-columns:1fr}
     .hero-grid{grid-template-columns:1fr;gap:54px}
     .fulcrum{max-width:420px;margin:0 auto}
     .profile-grid{grid-template-columns:1fr;gap:40px}
@@ -191,7 +202,7 @@
   <nav class="nav-links" id="navlinks">
     <a href="#servizi">Servizi</a>
     <a href="#clienti">Clienti</a>
-    <a href="#brand">Il brand</a>
+    <a href="#team">Founder &amp; Partner</a>
     <a href="#formazione">Formazione</a>
     <a href="#contatto" class="nav-cta">Parliamone</a>
   </nav>
@@ -345,6 +356,37 @@
   </div>
 </section>
 
+<!-- FOUNDER & PARTNER -->
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Founder &amp; Partner</span>
+      <h2>Le persone dietro il brand.</h2>
+      <p>Balance &amp; Growth Advisory è una rete di competenze. Ogni professionista porta esperienza diretta e storia certificata — nessuna competenza generica, nessuna soluzione preconfezionata.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <img src="/Img/Foto Fabio Gino Merli.png" alt="Fabio Gino Merli" />
+        <div class="team-card-body">
+          <h3>Fabio Gino Merli</h3>
+          <div class="tc-role">Fondatore · CFO &amp; Direttore Generale</div>
+          <p>Ideatore di Balance &amp; Growth Advisory. Venticinque anni come CFO e Direttore Generale in gruppi nazionali e multinazionali. Governo economico-finanziario, direzione strategica, internazionalizzazione.</p>
+          <a href="/fabio.html" class="lnk">Profilo completo →</a>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <img src="/Img/FOTO Michele Borzatta.png" alt="Michele Borzatta" />
+        <div class="team-card-body">
+          <h3>Michele Borzatta</h3>
+          <div class="tc-role">Partner · Organizzazione &amp; Compliance</div>
+          <p>Specializzato nella costruzione di Modelli Organizzativi di Gestione e Controllo (D.Lgs. 231/01) e sistemi qualità certificati. Lead Auditor ISO 9001:2015. Oltre vent'anni di governance in imprese complesse.</p>
+          <a href="/michele.html" class="lnk">Profilo completo →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FORMAZIONE -->
 <section id="formazione" class="formazione">
   <div class="wrap">
@@ -375,16 +417,6 @@
       <p>Stessa filosofia operativa: nessuna soluzione preconfezionata, massima attenzione al contesto specifico del cliente.</p>
     </div>
     <div class="partners-grid">
-      <div class="partner reveal">
-        <h3>Fabio Gino Merli</h3>
-        <p>Ideatore e fondatore di Balance &amp; Growth Advisory. Venticinque anni come CFO e Direttore Generale in gruppi nazionali e multinazionali. L'esperienza diretta nella gestione d'impresa è la base del modello operativo del brand.</p>
-        <a class="lnk" href="/fabio.html">Profilo completo →</a>
-      </div>
-      <div class="partner reveal">
-        <h3>Michele Borzatta</h3>
-        <p>Partner per l'area organizzazione e compliance. Specializzato nella costruzione di Modelli Organizzativi di Gestione e Controllo (D.Lgs. 231/01), sistemi qualità certificati e compliance ESG. Lead Auditor ISO 9001:2015, oltre vent'anni di governance in imprese complesse.</p>
-        <a class="lnk" href="/michele.html">Profilo completo →</a>
-      </div>
       <div class="partner reveal">
         <h3>DSC Solutions</h3>
         <p>Partner di riferimento per l'efficientamento energetico, la gestione e lo smaltimento rifiuti e la sostenibilità aziendale. Una variabile sempre più rilevante nella pianificazione a medio e lungo termine, integrata col governo finanziario dell'impresa.</p>
