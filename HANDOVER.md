@@ -11,7 +11,7 @@ Merli** in modo rapido e pulito. Tieni questo file aggiornato.
 |---|---|---|
 | Dominio `balanceandgrowth.com` | Cloudflare Registrar | **Michele Borzatta** |
 | Hosting (Worker `balanceandgrowth`) | Cloudflare Workers | **Michele Borzatta** |
-| Repo del progetto | _(da definire: locale / GitHub)_ | Michele |
+| Repo del progetto | GitHub: https://github.com/Mikiborzi/balance-growth-advisory (privato) | Michele |
 | Backend form / dati contatti | _(non ancora attivato)_ | — |
 | Email contatti pubblicata sul sito | ceobalanceadvisory@protonmail.com | _(verificare)_ |
 
@@ -22,7 +22,7 @@ fase attuale. Tutto ciò che segue serve a poter cambiare questo stato in fretta
 
 - [ ] Account Cloudflare (email + 2FA)
 - [ ] Accesso al dominio (Cloudflare Registrar)
-- [ ] Eventuale repo GitHub (owner + accesso)
+- [ ] Repo GitHub (trasferire ownership a Fabio o invitarlo come collaboratore)
 - [ ] Account del servizio form (quando attivato)
 - [ ] Casella email dei contatti
 
