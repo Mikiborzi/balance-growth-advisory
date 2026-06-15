@@ -216,15 +216,13 @@ senza essere installato localmente nel progetto (nessun `package.json`).
 | Campo | Valore | Dove |
 |---|---|---|
 | Email visibile (sezione #contatto) | `info@balanceandgrowth.com` | `index.html` riga 443 |
-| Email nel JSON-LD (strutturata) | `ceobalanceadvisory@protonmail.com` | `index.html` riga 20 |
+| Email nel JSON-LD (strutturata) | `info@balanceandgrowth.com` | `index.html` riga 20 |
 | Telefono nel JSON-LD (strutturato) | `+39 331 680 5428` | `index.html` riga 20 |
 | Canonical URL homepage | `https://www.balanceandgrowth.com/` | `index.html` |
 | Canonical URL Fabio | `https://www.balanceandgrowth.com/fabio.html` | `fabio.html` |
 | Canonical URL Michele | `https://www.balanceandgrowth.com/michele.html` | `michele.html` |
 
-⚠️ **Inconsistenza:** l'email visibile nel corpo della pagina (`info@balanceandgrowth.com`)
-è diversa dall'email nel JSON-LD (`ceobalanceadvisory@protonmail.com`). Il numero
-di telefono compare solo nel JSON-LD, non nel corpo visivo della pagina.
+Il numero di telefono compare solo nel JSON-LD, non nel corpo visivo della pagina (vedi C4).
 
 ---
 
@@ -250,7 +248,7 @@ Cloudflare (https://dash.cloudflare.com).
 |---|---|---|
 | ~~C1~~ | ~~Foto Michele pesa 3 MB~~ | ✅ Risolto 2026-06-15 — convertita a JPEG 85 KB |
 | ~~C2~~ | ~~Spazi nei nomi file immagini~~ | ✅ Risolto 2026-06-15 — rinominati in lowercase con trattini |
-| C3 | **Email inconsistente** — il corpo visivo mostra `info@balanceandgrowth.com`, il JSON-LD contiene ancora `ceobalanceadvisory@protonmail.com`. Allineare. | Media |
+| ~~C3~~ | ~~Email inconsistente~~ | ✅ Risolto 2026-06-15 — JSON-LD allineato a `info@balanceandgrowth.com` |
 | C4 | **Telefono solo nel JSON-LD** — `+39 331 680 5428` non compare nel corpo visivo. Valutare se aggiungerlo alla sezione #contatto. | Media |
 | C5 | **Sezione `#partner` assente dalla nav** — DSC Solutions e AI Academy non sono raggiungibili dal menu. Valutare se aggiungere voce nav o anchor dal footer. | Bassa |
 | C6 | **Back-link delle sottopagine punta a `#brand`** — `fabio.html` e `michele.html` hanno il link "← Il brand" che porta a `#brand` anziché a `#team`. Semanticamente scorretto (le card foto sono in `#team`). | Bassa |
