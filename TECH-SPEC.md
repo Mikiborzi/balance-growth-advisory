@@ -27,8 +27,8 @@ balance-growth-advisory/
 │   ├── fabio.html                      ← profilo Fabio Gino Merli (242 righe, ~14 KB)
 │   ├── michele.html                    ← profilo Michele Borzatta (265 righe, ~16 KB)
 │   └── Img/                            ← immagini (cartella con I maiuscola)
-│       ├── Foto Fabio Gino Merli.png   ← foto profilo Fabio (416 KB)
-│       └── FOTO Michele Borzatta.png   ← foto profilo Michele (3,0 MB — ⚠️ vedi §6)
+│       ├── foto-fabio-merli.jpg        ← foto profilo Fabio (71 KB, 556×558 px)
+│       └── foto-michele-borzatta.jpg   ← foto profilo Michele (85 KB, 900×758 px)
 ├── wrangler.jsonc                      ← configurazione Cloudflare Workers
 ├── CLAUDE.md                           ← istruzioni per Claude Code
 ├── HANDOVER.md                         ← passaggio di consegne
@@ -184,19 +184,18 @@ URL: `https://www.balanceandgrowth.com/michele.html`
 
 ## 6. Immagini
 
-| File | Dimensione | Riferimenti |
-|---|---|---|
-| `public/Img/Foto Fabio Gino Merli.png` | 416 KB | `index.html` (sezione #team), `fabio.html` (hero) |
-| `public/Img/FOTO Michele Borzatta.png` | **3,0 MB** | `index.html` (sezione #team), `michele.html` (hero) |
+| File | Dimensione | Dimensioni px | Riferimenti |
+|---|---|---|---|
+| `public/Img/foto-fabio-merli.jpg` | 71 KB | 556×558 | `index.html` (sezione #team), `fabio.html` (hero) |
+| `public/Img/foto-michele-borzatta.jpg` | 85 KB | 900×758 | `index.html` (sezione #team), `michele.html` (hero) |
 
-### Criticità immagini
+### Note immagini
 
-| # | Problema | Dettaglio |
+| # | Nota | Dettaglio |
 |---|---|---|
-| 1 | **Spazi nel nome file** | Entrambi i file hanno spazi nel nome (`Foto Fabio Gino Merli.png`, `FOTO Michele Borzatta.png`). Cloudflare Workers serve gli asset con URL encoding (`%20`). Funziona oggi, ma i riferimenti HTML puntano ai path con spazi: verificare che il browser risolva correttamente. Meglio rinominare con trattini (`foto-fabio-gino-merli.png`). |
-| 2 | **Capitalizzazione inconsistente** | `Foto Fabio...` (iniziale maiuscola) vs `FOTO Michele...` (tutto maiuscolo). Sistemi case-sensitive (come i server Linux di Cloudflare) trattano le due grafie come file diversi. I path nel codice HTML *corrispondono* ai file reali, ma è una bomba a orologeria in caso di rinomina. |
-| 3 | **Peso eccessivo** | `FOTO Michele Borzatta.png` pesa 3,0 MB — troppo per un'immagine web. Va ottimizzata (target: < 200 KB, formato WebP). |
-| 4 | **Nessun favicon esterno** | Il favicon è un SVG inline codificato in base64 direttamente nell'HTML — nessun file `.ico` o `.png` separato. Funziona, ma non è cacheato separatamente. |
+| 1 | **Nomi normalizzati** | ✅ Rinominati in lowercase con trattini, senza spazi (risolto 2026-06-15). |
+| 2 | **Peso ottimizzato** | ✅ Convertiti da PNG a JPEG: Fabio −83% (407 KB → 71 KB), Michele −97% (2,9 MB → 85 KB, scalata a 900 px). |
+| 3 | **Nessun favicon esterno** | Il favicon è un SVG inline codificato in base64 direttamente nell'HTML — nessun file `.ico` o `.png` separato. Funziona, ma non è cacheato separatamente. |
 
 ---
 
@@ -250,8 +249,8 @@ Cloudflare (https://dash.cloudflare.com).
 
 | # | Criticità | Priorità |
 |---|---|---|
-| C1 | **Foto Michele pesa 3 MB** — impatta il tempo di caricamento su mobile. Ottimizzare in WebP a < 200 KB. | Alta |
-| C2 | **Spazi nei nomi file immagini** — rischio URL encoding. Rinominare con trattini, aggiornare i riferimenti HTML. | Alta |
+| ~~C1~~ | ~~Foto Michele pesa 3 MB~~ | ✅ Risolto 2026-06-15 — convertita a JPEG 85 KB |
+| ~~C2~~ | ~~Spazi nei nomi file immagini~~ | ✅ Risolto 2026-06-15 — rinominati in lowercase con trattini |
 | C3 | **Email inconsistente** — il corpo visivo mostra `info@balanceandgrowth.com`, il JSON-LD contiene ancora `ceobalanceadvisory@protonmail.com`. Allineare. | Media |
 | C4 | **Telefono solo nel JSON-LD** — `+39 331 680 5428` non compare nel corpo visivo. Valutare se aggiungerlo alla sezione #contatto. | Media |
 | C5 | **Sezione `#partner` assente dalla nav** — DSC Solutions e AI Academy non sono raggiungibili dal menu. Valutare se aggiungere voce nav o anchor dal footer. | Bassa |
