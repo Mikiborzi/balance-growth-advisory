@@ -100,15 +100,17 @@ npx wrangler deploy
 ## Stato del lavoro
 
 - ✅ Struttura tecnica e organizzativa (questa cartella).
-- ✅ Repo GitHub: https://github.com/Mikiborzi/balance-growth-advisory (verificare se pubblico o privato).
+- ✅ Repo GitHub: https://github.com/Mikiborzi/balance-growth-advisory
 - ✅ Deploy su Cloudflare Workers (Worker: `balanceandgrowth`, account Michele).
   - `balanceandgrowth.com` e `www.balanceandgrowth.com` configurati come custom domain.
   - `workers_dev: false` nel `wrangler.jsonc`.
-  - Ultimo deploy: 2026-06-13 (vedere HANDOVER.md per UUID esatto).
+  - Ultimo deploy: 2026-06-15 — Version ID: `ed244ece-821c-4c67-bc41-f963bc09353c`.
 - ✅ Homepage con 5 servizi, sezione brand, Founder & Partner, formazione, partner.
 - ✅ Sottopagine profilo: `fabio.html` e `michele.html` con foto e timeline.
 - ✅ Email contatti: `info@balanceandgrowth.com` via Cloudflare Email Routing.
-- ⚠️ Criticità note: vedi `TECH-SPEC.md` sezione 10 (immagini pesanti, email
-  inconsistente nel JSON-LD, sezione #partner assente dalla nav, ecc.).
-- ⬜ **Prossima fase**: ottimizzare immagini, allineare email nel JSON-LD,
-  valutare form di contatto. Modifiche ai contenuti solo se concordate con Michele.
+- ✅ Immagini ottimizzate (PNG → JPEG, nomi senza spazi, peso ridotto).
+- ✅ Email JSON-LD allineata a `info@balanceandgrowth.com`.
+- ✅ Nav bar uniforme in tutte le pagine, con voce "Una rete di Valore" (#partner).
+- ⚠️ Criticità residue: vedi `TECH-SPEC.md` sezione 10.
+- ⬜ **Prossima fase**: valutare form di contatto. Modifiche ai contenuti solo se
+  concordate con Michele.
