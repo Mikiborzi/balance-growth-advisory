@@ -67,7 +67,7 @@ vedi `TECH-SPEC.md`.
 - **workers.dev**: disabilitato (`"workers_dev": false` in `wrangler.jsonc`)
 - **compatibility_date**: `2026-06-13`
 - **Configurazione**: `wrangler.jsonc` nella root del progetto
-- **Ultima versione deployata**: 2026-06-15 — Version ID: `ed244ece-821c-4c67-bc41-f963bc09353c`
+- **Ultima versione deployata**: 2026-06-15 — Version ID: `ffa6a802-f636-4fa7-9818-0720ebbf55c0`
 
 Per pubblicare modifiche: `npx wrangler deploy` (dalla cartella del progetto,
 dopo `npx wrangler login` se necessario).
