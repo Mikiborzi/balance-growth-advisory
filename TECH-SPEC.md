@@ -61,8 +61,7 @@ npx wrangler login    # solo la prima volta / se token scaduto
 npx wrangler deploy
 ```
 
-**Ultimo deployment noto:** 2026-06-13 (ID Wrangler da verificare nel pannello
-Cloudflare — vedi §9).
+**Ultimo deployment:** 2026-06-15 — Version ID: `301e85e3-6460-463e-9263-111402640653`
 
 ---
 
