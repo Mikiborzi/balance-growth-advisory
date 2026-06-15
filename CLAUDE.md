@@ -15,14 +15,24 @@ qualsiasi momento senza dipendere da altre infrastrutture. Vedi `HANDOVER.md`.
 
 ## Stack & architettura (semplice di proposito)
 
-- **Un solo file**: `public/index.html`. HTML + CSS + un po' di JS, tutto inline.
+- **Tre file HTML**: `public/index.html` (homepage), `public/fabio.html` (profilo
+  Fondatore), `public/michele.html` (profilo Partner). HTML + CSS + JS inline,
+  nessun file CSS o JS separato.
+- **Immagini**: `public/Img/Foto Fabio Gino Merli.png` e
+  `public/Img/FOTO Michele Borzatta.png`.
 - **Nessun build step**, nessun framework, nessun backend.
 - **Hosting**: Cloudflare Workers (static assets). Worker name: `balanceandgrowth`.
-- **Dominio**: balanceandgrowth.com (collegato al Worker su Cloudflare).
+- **Dominio**: `balanceandgrowth.com` e `www.balanceandgrowth.com` (custom
+  domain collegati al Worker su Cloudflare).
 - **Deploy**: `npx wrangler deploy` dalla cartella del progetto.
+- **Specifiche tecniche complete**: vedi `TECH-SPEC.md`.
 
 Mantieni questa semplicità. Niente dipendenze o strumenti nuovi senza una ragione
 reale: ogni dipendenza è un nodo in più da sciogliere il giorno della consegna.
+
+**Attenzione CSS**: ogni file HTML contiene un blocco `<style>` inline. Se
+modifichi il design system (colori, font, variabili CSS), ricordati di
+replicare la modifica in tutti e tre i file.
 
 ## Sistema visivo (non cambiarlo senza accordo)
 
@@ -44,14 +54,30 @@ reale: ogni dipendenza è un nodo in più da sciogliere il giorno della consegna
 - Percorso: Adecco Italia Holding (Dir. Amm. e Finanza), Fitness First Italia
   (Finance Manager), Gruppo Lattonedil (CFO, 10 società, team 38 persone,
   membro OdV 231), Angelo Cappellini & C. (Direttore Generale).
-- Servizi: Diagnosi e struttura · Controllo e governo (controllo di gestione
-  finanziario e patrimoniale) · Direzione strategica (CFO/CEO Fractional).
+- **5 servizi**: Diagnosi e struttura · Controllo e governo · Direzione
+  strategica (CFO/CEO Fractional) · Sviluppo internazionale · Finanza ordinaria
+  e straordinaria.
 - Formazione: corso "Business Up" sul business plan (7 moduli).
-- Partner: DSC Solutions (energia/sostenibilità), AI Academy (Starting Work).
-- Contatti: ceobalanceadvisory@protonmail.com · +39 331 680 5428.
+- Partner: DSC Solutions (energia/sostenibilità/rifiuti), AI Academy (Starting Work).
+- Contatti pubblici: `info@balanceandgrowth.com` (email visibile sul sito, via
+  Cloudflare Email Routing) · `ceobalanceadvisory@protonmail.com` (nel JSON-LD
+  strutturato) · `+39 331 680 5428` (nel JSON-LD strutturato).
 
 **Regola ferma**: niente risultati, numeri o testimonianze di clienti finché non
 li fornisce Fabio. Non fabbricare prove sociali.
+
+## Fatti su Michele (NON inventare nulla oltre a questi)
+
+- Partner di Balance & Growth Advisory per l'area organizzazione e compliance.
+- Consulente e Project Manager, 20+ anni di esperienza in sistemi qualità e
+  Modelli Organizzativi D.Lgs. 231/01.
+- Lead Auditor ISO 9001:2015 (Unione Professionisti, 2025); Quality Management
+  Systems Auditor (BSI Group, 2011).
+- Socio fondatore: Starting Work Srl Impresa Sociale, Mestieri Lombardia (rete
+  20+ Agenzie per il Lavoro accreditate Regione Lombardia / Ministero Lavoro).
+- Membro CdA Fondazione Alessandro Volta di Como.
+- Competenze dichiarate: D.Lgs. 231/01, ISO 9001:2015, ISO 37001, ESG/GRI,
+  PdR 125:2022, project management, governance cooperativa.
 
 ## Quando aggiungi un FORM (raccolta dati)
 
@@ -74,10 +100,15 @@ npx wrangler deploy
 ## Stato del lavoro
 
 - ✅ Struttura tecnica e organizzativa (questa cartella).
-- ✅ Repo GitHub: https://github.com/Mikiborzi/balance-growth-advisory (pubblico).
+- ✅ Repo GitHub: https://github.com/Mikiborzi/balance-growth-advisory (verificare se pubblico o privato).
 - ✅ Deploy su Cloudflare Workers (Worker: `balanceandgrowth`, account Michele).
   - `balanceandgrowth.com` e `www.balanceandgrowth.com` configurati come custom domain.
   - `workers_dev: false` nel `wrangler.jsonc`.
-  - Ultima versione: `89794c28` (2026-06-13).
-- ⬜ **Prossima fase**: ricostruire i contenuti in forma più professionale —
-  da fare insieme a Michele. Fino ad allora, modifiche solo se concordate.
+  - Ultimo deploy: 2026-06-13 (vedere HANDOVER.md per UUID esatto).
+- ✅ Homepage con 5 servizi, sezione brand, Founder & Partner, formazione, partner.
+- ✅ Sottopagine profilo: `fabio.html` e `michele.html` con foto e timeline.
+- ✅ Email contatti: `info@balanceandgrowth.com` via Cloudflare Email Routing.
+- ⚠️ Criticità note: vedi `TECH-SPEC.md` sezione 10 (immagini pesanti, email
+  inconsistente nel JSON-LD, sezione #partner assente dalla nav, ecc.).
+- ⬜ **Prossima fase**: ottimizzare immagini, allineare email nel JSON-LD,
+  valutare form di contatto. Modifiche ai contenuti solo se concordate con Michele.

@@ -1,7 +1,7 @@
 # Balance & Growth Advisory — sito
 
 Sito vetrina dello studio di consulenza di **Fabio Gino Merli**.
-Sito statico (un solo file HTML), nessun build, ospitato su Cloudflare Workers.
+Sito statico (HTML/CSS/JS inline, nessun build), ospitato su Cloudflare Workers.
 Dominio: **balanceandgrowth.com**
 
 ---
@@ -11,17 +11,20 @@ Dominio: **balanceandgrowth.com**
 ```
 balance-growth-advisory/
 ├── public/
-│   └── index.html        ← il sito (l'unico file che va online)
+│   ├── index.html        ← homepage
+│   ├── fabio.html        ← profilo Fabio Gino Merli (fondatore)
+│   ├── michele.html      ← profilo Michele Borzatta (partner)
+│   └── Img/              ← foto profilo
 ├── wrangler.jsonc        ← configurazione per pubblicare su Cloudflare
 ├── CLAUDE.md             ← istruzioni per lavorare con Claude Code
 ├── HANDOVER.md           ← passaggio di consegne (proprietà, credenziali, sgancio)
-├── README.md             ← questo file
-└── .gitignore
+├── TECH-SPEC.md          ← specifiche tecniche as-built (audit completo)
+└── README.md             ← questo file
 ```
 
 ## Vedere il sito in locale
 
-Apri semplicemente `public/index.html` nel browser (doppio click).
+Apri `public/index.html` nel browser (doppio click).
 Oppure, da terminale, dentro la cartella del progetto:
 
 ```bash
