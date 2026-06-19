@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Balance &amp; Growth Advisory — Crescita e sviluppo d'impresa per le PMI</title>
-<meta name="description" content="Balance & Growth Advisory: consulenza strategica per le PMI italiane su gestione economico-finanziaria, ottimizzazione organizzativa e transizione digitale. Una rete di professionisti che costruisce con voi le soluzioni giuste." />
+<title>Balance &amp; Growth Advisory — Costruiamo crescita. Non la descriviamo.</title>
+<meta name="description" content="Balance & Growth Advisory: partner operativo per la crescita d'impresa. Ottimizzazione organizzativa, governo finanziario, partner strategici e finanziari, finanza straordinaria. Una rete che genera valore reale." />
 
 <link rel="canonical" href="https://www.balanceandgrowth.com/" />
 <meta name="theme-color" content="#11302E" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="it_IT" />
-<meta property="og:title" content="Balance &amp; Growth Advisory — Crescita e sviluppo d'impresa per le PMI" />
-<meta property="og:description" content="Prima l'equilibrio. Poi la crescita. Balance &amp; Growth Advisory costruisce con imprenditori e management le strutture economico-finanziarie e organizzative per una crescita sana e sostenibile." />
+<meta property="og:title" content="Balance &amp; Growth Advisory — Costruiamo crescita. Non la descriviamo." />
+<meta property="og:description" content="Prima l'equilibrio. Poi la crescita. Balance &amp; Growth Advisory costruisce con imprenditori e management le strutture per crescere: dall'ottimizzazione dei processi alla finanza straordinaria, dall'identificazione di partner strategici all'innovazione applicata." />
 <meta property="og:url" content="https://www.balanceandgrowth.com/" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%2311302E'/%3E%3Crect%20x='6'%20y='14'%20width='20'%20height='2'%20rx='1'%20fill='%23C9A05A'/%3E%3Cpath%20d='M16%2017%20L20%2024%20L12%2024%20Z'%20fill='%23B07D2B'/%3E%3C/svg%3E" />
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Balance & Growth Advisory","description":"Consulenza strategica per le PMI italiane: gestione economico-finanziaria, ottimizzazione organizzativa, internazionalizzazione e transizione digitale. Una rete di professionisti coordinata da Fabio Gino Merli.","founder":{"@type":"Person","name":"Fabio Gino Merli","jobTitle":"Fondatore e Ideatore","alumniOf":"Università degli Studi di Torino"},"email":"info@balanceandgrowth.com","telephone":"+39 331 680 5428","areaServed":"IT","url":"https://www.balanceandgrowth.com/"}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Balance & Growth Advisory","description":"Partner operativo per la crescita d'impresa: ottimizzazione organizzativa, governo economico-finanziario, identificazione di partner strategici, finanza ordinaria e straordinaria. Una rete di professionisti coordinata da Fabio Gino Merli.","founder":{"@type":"Person","name":"Fabio Gino Merli","jobTitle":"Fondatore e Ideatore","alumniOf":"Università degli Studi di Torino"},"email":"info@balanceandgrowth.com","telephone":"+39 331 680 5428","areaServed":"IT","url":"https://www.balanceandgrowth.com/"}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,6 +55,14 @@
   .nav-links a:hover{color:var(--brass)}
   .nav-cta{font-size:.82rem;font-family:var(--mono);letter-spacing:.04em;border:1px solid var(--brass);color:var(--brass)!important;padding:9px 16px;border-radius:2px;transition:all .25s ease}
   .nav-cta:hover{background:var(--brass);color:#fff!important}
+  .nav-right{display:flex;align-items:center;gap:14px}
+  .lang-switch{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;display:flex;align-items:center;gap:5px}
+  .lang-switch .sep{color:var(--on-ink-soft);opacity:.35}
+  .lang-switch .cur{color:var(--on-ink-soft);opacity:.6}
+  .lang-switch a{color:var(--brass);transition:color .2s}
+  .lang-switch a:hover{color:var(--brass-soft)}
+  header.nav.scrolled .lang-switch .sep{color:var(--text-soft)}
+  header.nav.scrolled .lang-switch .cur{color:var(--text-soft)}
   .nav-toggle{display:none}
 
   .hero{position:relative;background:radial-gradient(120% 90% at 80% 0%, #163C39 0%, var(--ink) 42%, var(--ink-2) 100%);color:var(--paper);min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:80px;overflow:hidden}
@@ -200,7 +208,7 @@
 <header class="nav" id="nav">
   <a href="#top" class="brand">Balance <span class="amp">&amp;</span> Growth <span class="sfx">Advisory</span></a>
   <nav class="nav-links" id="navlinks">
-    <a href="#servizi">Servizi</a>
+    <a href="#servizi">Aree di intervento</a>
     <a href="#clienti">Con chi operiamo</a>
     <a href="#brand">Brand</a>
     <a href="#team">Founder &amp; Partner</a>
@@ -208,7 +216,10 @@
     <a href="#partner">Una rete di Valore</a>
     <a href="#contatto" class="nav-cta">Parliamone</a>
   </nav>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <div class="nav-right">
+    <div class="lang-switch"><span class="cur">IT</span><span class="sep">|</span><a href="/en/">EN</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
 </header>
 
 <!-- HERO -->
@@ -216,12 +227,12 @@
   <div class="beam"></div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow reveal">Consulenza strategica · crescita e sviluppo per le PMI italiane</span>
+      <span class="eyebrow reveal">Partner operativo · struttura, governo e innovazione per l'impresa</span>
       <h1 class="reveal">Prima l'<span class="accent">equilibrio</span>.<br>Poi la <span class="accent">crescita</span>.</h1>
-      <p class="lead reveal">Balance &amp; Growth Advisory costruisce con imprenditori e management di PMI italiane sistemi solidi di governo — per analizzare la situazione reale, generare risposte concrete e condividere strategie di sviluppo sostenibile.</p>
+      <p class="lead reveal">Balance &amp; Growth Advisory lavora dall'interno delle imprese per costruire le strutture che generano crescita reale: dall'ottimizzazione dei processi organizzativi alla gestione della finanza straordinaria, dall'identificazione di partner strategici all'attivazione degli strumenti finanziari giusti. Non seguiamo la crescita — la costruiamo.</p>
       <div class="cta-row reveal">
         <a href="#contatto" class="btn btn-primary">Parliamone →</a>
-        <a href="#servizi" class="btn btn-ghost">I nostri servizi</a>
+        <a href="#servizi" class="btn btn-ghost">Le aree di intervento</a>
       </div>
     </div>
     <div class="fulcrum reveal">
@@ -238,67 +249,67 @@
 <!-- MANIFESTO -->
 <section class="manifesto">
   <div class="wrap">
-    <blockquote class="reveal">Crescere in modo sostenibile non è una questione di velocità.<br>È una questione di <em>metodo, struttura e responsabilità</em>.</blockquote>
+    <blockquote class="reveal">Costruire innovazione non significa seguire le tendenze.<br>Significa strutturare l'impresa per generare valore in modo <em>autonomo, sostenibile e scalabile</em>.</blockquote>
     <div class="sig reveal">Balance &amp; Growth Advisory</div>
   </div>
 </section>
 
-<!-- COSA FACCIO -->
+<!-- AREE DI INTERVENTO -->
 <section id="servizi">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">I nostri servizi</span>
-      <h2>Più chiarezza che rapidità.<br>Più struttura che improvvisazione.</h2>
-      <p style="max-width:100%;text-align:justify">Balance &amp; Growth Advisory analizza situazioni, costruisce strumenti e condivide strategie: cinque aree di intervento per dare all'impresa il governo completo della propria crescita.</p>
+      <span class="eyebrow">Le aree di intervento</span>
+      <h2>Non descriviamo le soluzioni.<br>Le costruiamo con voi.</h2>
+      <p style="max-width:100%;text-align:justify">Cinque aree di intervento in sequenza logica: prima si ottimizzano i processi, poi si governa con i numeri reali, poi si presidia la direzione, poi si individuano i partner giusti, poi si accede alla finanza. Un percorso integrato per dare all'impresa il governo completo della propria crescita.</p>
     </div>
     <div class="services-grid">
       <div class="svc reveal">
-        <span class="ic">01 · Diagnosi</span>
-        <h3>Diagnosi e struttura</h3>
-        <p>Balance &amp; Growth Advisory analizza la situazione reale dell'azienda — numeri, processi, organizzazione, rapporto con il sistema finanziario — per capire dove si trova e costruire insieme la rotta verso dove vuole arrivare.</p>
+        <span class="ic">01 · Organizzazione</span>
+        <h3>Ottimizzazione organizzativa e gestionale</h3>
+        <p>Balance &amp; Growth Advisory analizza e ridisegna i processi organizzativi e gestionali per costruire strutture capaci di sostenere la crescita senza perdere il controllo. Prima di cercare risorse esterne, l'impresa deve funzionare bene dall'interno.</p>
         <ul>
-          <li>Analisi economico-finanziaria e patrimoniale</li>
-          <li>Lettura di processi e organizzazione</li>
-          <li>Rapporto con banche e sistema finanziario</li>
+          <li>Analisi e ridisegno dei processi operativi</li>
+          <li>Strutture organizzative scalabili</li>
+          <li>Sistemi di governo e controllo interno</li>
         </ul>
       </div>
       <div class="svc reveal">
-        <span class="ic">02 · Controllo</span>
-        <h3>Controllo e governo</h3>
-        <p>Balance &amp; Growth Advisory costruisce sistemi di pianificazione e controllo che permettono all'imprenditore di leggere i propri numeri, anticipare le tensioni finanziarie e decidere su dati affidabili — non su percezioni.</p>
+        <span class="ic">02 · Governo</span>
+        <h3>Governo economico-finanziario</h3>
+        <p>Costruiamo sistemi di controllo avanzati che permettono di leggere i numeri reali, anticipare le tensioni finanziarie e decidere su dati certi — non sulla percezione, non sull'istinto: sulla chiarezza.</p>
         <ul>
-          <li>Sistemi di controllo di gestione</li>
-          <li>Pianificazione finanziaria e patrimoniale</li>
-          <li>Cruscotti e indicatori per decidere</li>
+          <li>Sistemi di controllo di gestione avanzati</li>
+          <li>Pianificazione finanziaria integrata</li>
+          <li>Cruscotti e KPI per decisioni tempestive</li>
         </ul>
       </div>
       <div class="svc reveal">
         <span class="ic">03 · Direzione</span>
-        <h3>Direzione strategica</h3>
-        <p>Con la formula CFO o CEO Fractional o in Outsourcing, Balance &amp; Growth Advisory presidia stabilmente la funzione direzionale: competenza senior in azienda, senza i costi e i vincoli di una figura a tempo pieno.</p>
+        <h3>Direzione operativa</h3>
+        <p>Con la formula CFO o CEO Fractional, Balance &amp; Growth Advisory presidia stabilmente la funzione direzionale nelle fasi più critiche: crescita accelerata, ristrutturazione, transizione e apertura di nuovi mercati. Competenza senior nell'impresa, senza i vincoli del tempo pieno.</p>
         <ul>
-          <li>CFO Fractional / in Outsourcing</li>
+          <li>CFO Fractional / Direzione finanziaria in outsourcing</li>
           <li>Direzione generale ad interim</li>
-          <li>Presidio di crescita, ristrutturazione, transizione</li>
+          <li>Presidio di crescita, ristrutturazione e transizione</li>
         </ul>
       </div>
       <div class="svc reveal">
-        <span class="ic">04 · Internazionalizzazione</span>
-        <h3>Sviluppo internazionale</h3>
-        <p>Balance &amp; Growth Advisory progetta e gestisce percorsi di internazionalizzazione: dall'analisi dei mercati esteri alla strutturazione operativa, fino al coordinamento di reti di partner locali.</p>
+        <span class="ic">04 · Partner</span>
+        <h3>Partner strategici e finanziari</h3>
+        <p>Il valore di una rete si misura sulla qualità dei nodi. Balance &amp; Growth Advisory identifica, valuta e struttura alleanze con partner industriali, commerciali e finanziari — in Italia e sui mercati internazionali. Non solo chi conosci: chi è giusto per te, nel momento giusto.</p>
         <ul>
-          <li>Analisi di mercati e opportunità internazionali</li>
-          <li>Strutturazione di modelli operativi cross-border</li>
-          <li>Coordinamento di partner e team locali</li>
+          <li>Identificazione e selezione di partner strategici</li>
+          <li>Sviluppo internazionale e accesso a nuovi mercati</li>
+          <li>Strutturazione di reti, joint venture e alleanze commerciali</li>
         </ul>
       </div>
       <div class="svc reveal">
         <span class="ic">05 · Finanza</span>
         <h3>Finanza ordinaria e straordinaria</h3>
-        <p>Balance &amp; Growth Advisory individua e gestisce strumenti di finanza ordinaria e straordinaria a supporto dei processi di ristrutturazione aziendale e di sviluppo d'impresa: dalla ricerca delle risorse alla strutturazione delle operazioni.</p>
+        <p>Intercettiamo, valutiamo e gestiamo l'intero spettro degli strumenti finanziari disponibili: dal credito ordinario alla finanza agevolata, dalle operazioni di M&amp;A agli aumenti di capitale. Ogni strumento nel momento giusto, con la struttura giusta.</p>
         <ul>
-          <li>Accesso al credito e gestione bancaria</li>
-          <li>Finanza agevolata, fondi e contributi</li>
+          <li>Accesso al credito e gestione del sistema bancario</li>
+          <li>Finanza agevolata, fondi pubblici e contributi</li>
           <li>Operazioni straordinarie: M&amp;A, fusioni, aumenti di capitale</li>
         </ul>
       </div>
@@ -311,33 +322,33 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Con chi operiamo</span>
-      <h2 style="font-size:clamp(1.5rem,2.6vw,2.2rem)">Due tipologie di imprese, lo stesso momento:<br>quello in cui le decisioni pesano.</h2>
+      <h2 style="font-size:clamp(1.5rem,2.6vw,2.2rem)">Due momenti d'impresa,<br>un solo approccio: dalla struttura al valore.</h2>
     </div>
     <div class="duo">
       <div class="who reveal">
-        <span class="tag">In crescita</span>
-        <h3>PMI in fase di espansione</h3>
-        <p>Hanno bisogno di struttura per sostenere la crescita senza perdere il controllo. Più si va veloci, più servono i freni giusti e la strumentazione di bordo.</p>
+        <span class="tag">In espansione</span>
+        <h3>Imprese in fase di crescita accelerata</h3>
+        <p>La crescita senza struttura consuma risorse senza generare valore. Costruiamo il sistema di governo che permette di scalare in modo controllato, intercettando le opportunità di finanza e partnership nel momento giusto.</p>
       </div>
       <div class="who reveal">
         <span class="tag">In transizione</span>
-        <h3>PMI in ristrutturazione o riorganizzazione</h3>
-        <p>Devono prendere decisioni difficili con lucidità, metodo e visione. È qui che un errore di tempismo costa più di un errore di direzione.</p>
+        <h3>Imprese in ristrutturazione o riorganizzazione</h3>
+        <p>Le fasi di discontinuità richiedono lucidità, metodo e decisioni rapide. Costruiamo la struttura per uscire dalla crisi con più solidità di prima — non per sopravvivere, ma per ripartire più forti.</p>
       </div>
     </div>
-    <p class="copilot reveal">In entrambi i casi Balance &amp; Growth Advisory costruisce con l'imprenditore la struttura per decidere meglio. Non consulenza a distanza: un <b>co-pilota</b> che analizza la situazione, genera le risposte giuste e condivide la rotta — anche quando le cose si complicano.</p>
+    <p class="copilot reveal">In entrambi i casi Balance &amp; Growth Advisory non opera a distanza. Entra nell'impresa, analizza la situazione reale, costruisce gli strumenti e presidia l'esecuzione. Non un osservatore esterno: un <b>partner operativo</b> che condivide la rotta e la percorre insieme a voi.</p>
   </div>
 </section>
 
-<!-- IL FONDATORE -->
+<!-- IL BRAND -->
 <section id="brand" class="profile">
   <div class="wrap">
     <div class="profile-grid">
       <div class="reveal">
         <span class="eyebrow">Il brand</span>
-        <h2>Chi ha gestito l'azienda dall'interno,<br>prima di consigliarla.</h2>
-        <p>Balance &amp; Growth Advisory è un brand che lega competenze specifiche e attiva una rete di professionisti con esperienza e storia certificata. Non un singolo consulente: un sistema coordinato di competenze capace di rispondere alle esigenze di ogni impresa con soluzioni costruite sul contesto reale.</p>
-        <p><span class="name">Fabio Gino Merli</span>, ideatore e fondatore, ha attraversato dall'interno le fasi più delicate della vita d'impresa — crescita accelerata, ristrutturazione, riorganizzazione, apertura a nuovi mercati. Venticinque anni come CFO e Direttore Generale in gruppi nazionali e multinazionali, nei settori manifatturiero e dei servizi. Laurea in Economia e Commercio all'Università di Torino.</p>
+        <h2>Vent'anni di gestione diretta.<br>Non di osservazione dall'esterno.</h2>
+        <p>Balance &amp; Growth Advisory è un sistema coordinato di competenze che lavora dall'interno delle imprese. Non un singolo professionista, non una lista di servizi: una rete operativa capace di attivare le leve giuste — organizzative, finanziarie, commerciali — nel momento giusto e con la struttura giusta.</p>
+        <p><span class="name">Fabio Gino Merli</span>, ideatore e fondatore, ha attraversato dall'interno le fasi più critiche della vita d'impresa — crescita accelerata, ristrutturazione, riorganizzazione, apertura a nuovi mercati. Venticinque anni come CFO e Direttore Generale in gruppi nazionali e multinazionali, nei settori manifatturiero e dei servizi. Laurea in Economia e Commercio all'Università di Torino.</p>
       </div>
       <div class="timeline reveal">
         <div class="tl"><div class="yr">2018 — 2021</div><div class="co">Angelo Cappellini &amp; C.</div><div class="ro">Direttore Generale · budgeting, forecasting, controllo di gestione</div></div>
@@ -364,7 +375,7 @@
     <div class="sec-head reveal">
       <span class="eyebrow">Founder &amp; Partner</span>
       <h2>Le persone dietro il brand.</h2>
-      <p>Balance &amp; Growth Advisory è una rete di competenze. Ogni professionista porta esperienza diretta e storia certificata — nessuna competenza generica, nessuna soluzione preconfezionata.</p>
+      <p>Balance &amp; Growth Advisory è una rete di competenze operative. Ogni professionista ha gestito dall'interno le sfide che oggi affronta con le imprese — nessuna competenza generica, nessuna soluzione preconfezionata.</p>
     </div>
     <div class="team-grid">
       <div class="team-card reveal">
@@ -372,7 +383,7 @@
         <div class="team-card-body">
           <h3>Fabio Gino Merli</h3>
           <div class="tc-role">Fondatore · CFO &amp; Direttore Generale</div>
-          <p>Ideatore di Balance &amp; Growth Advisory. Venticinque anni come CFO e Direttore Generale in gruppi nazionali e multinazionali. Governo economico-finanziario, direzione strategica, internazionalizzazione.</p>
+          <p>Ideatore di Balance &amp; Growth Advisory. Venticinque anni come CFO e Direttore Generale in gruppi nazionali e multinazionali. Governo economico-finanziario, direzione operativa, sviluppo internazionale.</p>
           <a href="/fabio.html" class="lnk">Profilo completo →</a>
         </div>
       </div>
@@ -381,7 +392,7 @@
         <div class="team-card-body">
           <h3>Michele Borzatta</h3>
           <div class="tc-role">Partner · Organizzazione &amp; Compliance</div>
-          <p>Specializzato nella costruzione di Modelli Organizzativi di Gestione e Controllo (D.Lgs. 231/01) e sistemi qualità certificati. Lead Auditor ISO 9001:2015. Oltre vent'anni di governance in imprese complesse.</p>
+          <p>Specializzato nella costruzione di Modelli Organizzativi di Gestione e Controllo e sistemi qualità certificati. Lead Auditor ISO 9001:2015. Oltre vent'anni di governo organizzativo in strutture complesse.</p>
           <a href="/michele.html" class="lnk">Profilo completo →</a>
         </div>
       </div>
@@ -395,7 +406,7 @@
     <div class="sec-head reveal">
       <span class="eyebrow">Formazione · Business Up</span>
       <h2>Dall'idea all'impresa finanziabile.</h2>
-      <p>Un percorso per progettare e presentare un business plan professionale, pronto per il dialogo con banche e investitori. Metodologia concreta: si impara facendo, su casi reali.</p>
+      <p>Un percorso per progettare e presentare un business plan professionale, pronto per il dialogo con banche e investitori. Metodologia operativa: si impara costruendo, su casi reali.</p>
     </div>
     <div class="modules">
       <div class="mod reveal"><span class="n">01</span><span class="t">Introduzione al business planning</span></div>
@@ -410,28 +421,28 @@
   </div>
 </section>
 
-<!-- PARTNER -->
+<!-- UNA RETE DI VALORE -->
 <section id="partner">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Una rete di valore</span>
-      <h2>Una rete scelta per competenza e approccio.</h2>
-      <p>Stessa filosofia operativa: nessuna soluzione preconfezionata, massima attenzione al contesto specifico del cliente.</p>
+      <h2>Una rete costruita su competenza, approccio e fiducia reciproca.</h2>
+      <p>Stessa filosofia operativa: nessuna soluzione preconfezionata, massima attenzione al contesto specifico dell'impresa. I partner di Balance &amp; Growth Advisory non completano l'offerta — la amplificano.</p>
     </div>
     <div class="partners-grid">
       <div class="partner reveal">
         <h3>DSC Solutions</h3>
-        <p>Partner di riferimento per l'efficientamento energetico, la gestione e lo smaltimento rifiuti e la sostenibilità aziendale. Una variabile sempre più rilevante nella pianificazione a medio e lungo termine, integrata col governo finanziario dell'impresa.</p>
+        <p>Partner di riferimento per l'efficientamento energetico, la gestione e lo smaltimento rifiuti e la sostenibilità aziendale. Una variabile sempre più determinante nella pianificazione strategica a medio e lungo termine, integrata con il governo finanziario dell'impresa.</p>
         <a class="lnk" href="https://www.dsc-solutions.it/" target="_blank" rel="noopener">dsc-solutions.it →</a>
       </div>
       <div class="partner reveal">
         <h3>AI Academy</h3>
-        <p>Formazione sull'intelligenza artificiale applicata all'impresa, promossa da Starting Work, Istituto Superiore accreditato dalla Regione Lombardia. Non un corso tecnico, ma un cambio di sguardo sul futuro dell'organizzazione d'impresa.</p>
+        <p>Formazione sull'intelligenza artificiale applicata all'impresa, promossa da Starting Work, Istituto Superiore accreditato dalla Regione Lombardia. Non un corso tecnico, ma un cambio di paradigma sul futuro dell'organizzazione d'impresa.</p>
         <a class="lnk" href="https://sw-aiacademy.duckdns.org" target="_blank" rel="noopener">AI Academy →</a>
       </div>
       <div class="partner reveal">
         <h3>iPerformance Club</h3>
-        <p>Rete esclusiva di imprenditori di successo di cui Fabio Gino Merli è socio. Un luogo di confronto, condivisione di esperienze e networking qualificato tra chi guida imprese in settori diversi — con l'obiettivo di crescere prima come persone, poi come professionisti.</p>
+        <p>Rete esclusiva di imprenditori di successo di cui Fabio Gino Merli è socio. Un ecosistema di confronto, condivisione di esperienze e networking qualificato tra chi guida imprese in settori diversi — con l'obiettivo di crescere prima come persone, poi come professionisti.</p>
         <a class="lnk" href="https://www.iperformanceclub.it" target="_blank" rel="noopener">iperformanceclub.it →</a>
       </div>
     </div>
@@ -441,9 +452,9 @@
 <!-- CONTATTO -->
 <section id="contatto" class="contact">
   <div class="wrap">
-    <span class="eyebrow reveal" style="justify-content:center">Parliamone</span>
-    <h2 class="reveal">Le decisioni che contano si prendono meglio<br>quando c'è un contesto chiaro.<br>Balance &amp; Growth Advisory fa chiarezza insieme a te.</h2>
-    <p class="reveal">Raccontaci dove sei e dove vuoi arrivare. Analizziamo insieme la situazione e costruiamo la risposta giusta — senza soluzioni preconfezionate.</p>
+    <span class="eyebrow reveal" style="justify-content:center">Costruiamola insieme</span>
+    <h2 class="reveal">Le strutture che generano crescita<br>si costruiscono partendo da una conversazione franca.<br>Iniziamo da qui.</h2>
+    <p class="reveal">Raccontaci dove sei e dove vuoi arrivare. Analizziamo insieme la situazione reale e costruiamo la risposta giusta — senza percorsi standardizzati, senza soluzioni preconfezionate.</p>
     <div class="lines">
       <a href="mailto:info@balanceandgrowth.com?subject=Balance%20%26%20Growth%20Advisory%20—%20Richiesta%20di%20contatto" class="email reveal">info@balanceandgrowth.com</a>
     </div>
