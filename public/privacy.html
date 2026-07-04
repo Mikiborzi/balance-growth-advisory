@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy &amp; Cookie Policy — Balance &amp; Growth Advisory</title>
+<meta name="robots" content="noindex" />
+<link rel="canonical" href="https://www.balanceandgrowth.com/privacy.html" />
+<meta name="theme-color" content="#11302E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%2311302E'/%3E%3Crect%20x='6'%20y='14'%20width='20'%20height='2'%20rx='1'%20fill='%23C9A05A'/%3E%3Cpath%20d='M16%2017%20L20%2024%20L12%2024%20Z'%20fill='%23B07D2B'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#11302E;--ink-2:#0B2422;--paper:#F4F1E9;--paper-2:#ECE7DA;
+    --brass:#B07D2B;--brass-soft:#C9A05A;--green:#2E6B47;
+    --text-soft:#445B57;--on-ink-soft:#A9C0BB;--line:#D8D1C0;--line-ink:rgba(201,160,90,.22);
+    --serif:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --maxw:1140px;--gutter:clamp(20px,5vw,64px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;flex-direction:column;transition:background .4s ease,border-color .4s ease;border-bottom:1px solid transparent}
+  header.nav.scrolled{background:rgba(244,241,233,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-top{display:flex;align-items:center;justify-content:space-between;padding:15px var(--gutter) 9px;transition:padding .4s ease}
+  header.nav.scrolled .nav-top{padding-block:9px}
+  .brand{font-family:var(--serif);font-size:1.16rem;font-weight:600;letter-spacing:.01em;color:var(--paper);transition:color .4s ease;white-space:nowrap}
+  .brand .amp{color:var(--brass-soft);font-style:italic;padding-inline:.06em}
+  .brand .sfx{font-weight:400;font-style:italic;opacity:.78}
+  header.nav.scrolled .brand{color:var(--ink)}
+  .nav-links{display:flex;gap:22px;align-items:center;padding:0 var(--gutter) 11px;border-top:1px solid var(--line-ink);transition:border-color .4s ease}
+  header.nav.scrolled .nav-links{border-top-color:rgba(68,91,87,.12);padding-bottom:10px}
+  .nav-links a{font-size:.88rem;color:var(--on-ink-soft);transition:color .25s ease}
+  header.nav.scrolled .nav-links a{color:var(--text-soft)}
+  .nav-links a:hover{color:var(--brass)}
+  .nav-right{display:flex;align-items:center;gap:14px}
+  .lang-switch{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;display:flex;align-items:center;gap:5px}
+  .lang-switch .sep{color:var(--on-ink-soft);opacity:.35}
+  .lang-switch .cur{color:var(--on-ink-soft);opacity:.6}
+  .lang-switch a{color:var(--brass);transition:color .2s}
+  .lang-switch a:hover{color:var(--brass-soft)}
+  header.nav.scrolled .lang-switch .sep{color:var(--text-soft)}
+  header.nav.scrolled .lang-switch .cur{color:var(--text-soft)}
+  .nav-toggle{display:none}
+  .footer-right{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+  .footer-lnk{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;color:var(--brass-soft);transition:color .2s}
+  .footer-lnk:hover{color:var(--brass)}
+
+  .page-hero{background:var(--ink);color:var(--paper);padding:160px var(--gutter) 72px;min-height:280px}
+  .page-hero .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-soft);display:inline-flex;align-items:center;gap:.6em;margin-bottom:18px}
+  .page-hero .eyebrow::before{content:"";width:26px;height:1px;background:var(--brass-soft);display:inline-block}
+  .page-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.01em}
+
+  .content{max-width:780px;margin:72px auto;padding-inline:var(--gutter)}
+  .content h2{font-family:var(--serif);font-weight:500;font-size:1.35rem;color:var(--ink);margin:48px 0 14px;padding-top:6px;border-top:1px solid var(--line)}
+  .content h2:first-child{border-top:none;margin-top:0}
+  .content p{color:var(--text-soft);font-size:1rem;margin-bottom:14px;max-width:72ch}
+  .content ul{list-style:none;margin-bottom:14px}
+  .content ul li{color:var(--text-soft);font-size:1rem;padding-left:20px;position:relative;margin-bottom:8px}
+  .content ul li::before{content:"—";position:absolute;left:0;color:var(--brass)}
+  .content a{color:var(--brass);border-bottom:1px solid transparent;transition:border-color .2s}
+  .content a:hover{border-color:var(--brass)}
+  .content .mono{font-family:var(--mono);font-size:.88rem}
+  .content .box{background:var(--paper-2);border:1px solid var(--line);border-left:3px solid var(--brass);padding:22px 28px;margin:28px 0}
+  .content .box p{margin-bottom:6px}
+  .content .box p:last-child{margin-bottom:0}
+
+  footer{background:var(--ink-2);color:var(--on-ink-soft);padding:40px 0;font-size:.84rem;margin-top:96px}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  footer .fbrand{font-family:var(--serif);color:var(--paper);font-size:1.05rem}
+  footer .fbrand .amp{color:var(--brass-soft);font-style:italic}
+  footer .note{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em}
+
+  @media(max-width:880px){
+    .nav-links{display:none;border-top:none;padding:0}
+    .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 0}
+    .nav-links.open a{padding:13px var(--gutter);color:var(--ink);margin-left:0}
+    .nav-toggle{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+    .nav-toggle span{width:24px;height:2px;background:var(--paper);transition:background .3s}
+    header.nav.scrolled .nav-toggle span{background:var(--ink)}
+    .brand .sfx{display:none}
+    .footer-right{align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-top">
+    <a href="/" class="brand">Balance <span class="amp">&amp;</span> Growth <span class="sfx">Advisory</span></a>
+    <div class="nav-right">
+      <div class="lang-switch"><span class="cur">IT</span><span class="sep">|</span><a href="/en/privacy.html">EN</a></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-links" id="navlinks">
+    <a href="/#servizi">Aree di intervento</a>
+    <a href="/#tfm">Temporary &amp; Fractional</a>
+    <a href="/#clienti">Con chi operiamo</a>
+    <a href="/#team">Founder &amp; Partner</a>
+    <a href="/#partner">Una rete di Valore</a>
+    <a href="/#contatto">Parliamone</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Informativa legale</div>
+    <h1>Privacy &amp; Cookie Policy</h1>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="box">
+    <p><strong>Titolare del trattamento</strong></p>
+    <p class="mono">BM Holding Srl</p>
+    <p class="mono">C.F. e P.IVA: 03829970130</p>
+    <p class="mono">PEC: bmholding@pecmeb.it</p>
+    <p class="mono">Email: info@balanceandgrowth.com</p>
+  </div>
+
+  <h2>1. Finalità e natura del sito</h2>
+  <p>Il sito <strong>balanceandgrowth.com</strong> è un sito vetrina che illustra le attività di Balance &amp; Growth Advisory, un progetto di BM Holding Srl. Il sito non raccoglie dati personali attraverso form, registrazioni o strumenti di analisi del comportamento degli utenti.</p>
+  <p>Non vengono effettuate attività di profilazione, remarketing o analisi statistica del traffico tramite cookie propri o di terzi.</p>
+
+  <h2>2. Dati trattati</h2>
+  <p>La navigazione del sito può comportare il trattamento delle seguenti categorie di dati:</p>
+  <ul>
+    <li><strong>Dati di navigazione tecnici</strong> — indirizzo IP, tipo di browser, sistema operativo, pagine visitate — trattati automaticamente dai sistemi informatici del fornitore di hosting (Cloudflare) per finalità di sicurezza e funzionamento del servizio. Questi dati non sono associati a persone identificate e vengono conservati per il tempo strettamente necessario alla gestione tecnica.</li>
+    <li><strong>Google Fonts</strong> — i caratteri tipografici del sito vengono caricati dai server di Google LLC (Mountain View, California, USA). Questo comporta la trasmissione dell'indirizzo IP dell'utente a Google al momento del caricamento della pagina. Google LLC aderisce al framework EU-US Data Privacy Framework. Informativa sulla privacy di Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
+  </ul>
+
+  <h2>3. Cookie</h2>
+  <p>Il sito non utilizza cookie di profilazione, cookie analitici o cookie di marketing di prima o terza parte.</p>
+  <p>Viene utilizzato un unico cookie tecnico:</p>
+  <ul>
+    <li><strong>bg_ok</strong> — memorizza la preferenza di chiusura del banner informativo sui cookie. Non contiene dati personali. Durata: 1 anno. Tipologia: cookie di prima parte, strettamente tecnico.</li>
+  </ul>
+  <p>I cookie tecnici strettamente necessari non richiedono il consenso dell'utente ai sensi dell'art. 122 del D.Lgs. 196/2003 e del Provvedimento del Garante dell'8 maggio 2014.</p>
+
+  <h2>4. Hosting — Cloudflare</h2>
+  <p>Il sito è distribuito tramite Cloudflare Workers (Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA). Cloudflare elabora dati tecnici di navigazione nell'erogazione del servizio CDN e di sicurezza. Privacy policy di Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a>.</p>
+
+  <h2>5. Base giuridica del trattamento</h2>
+  <p>Il trattamento dei dati di navigazione tecnici è effettuato sulla base del legittimo interesse del titolare (art. 6, par. 1, lett. f, GDPR) alla corretta erogazione e sicurezza del servizio. Non vengono effettuati trattamenti che richiedano il consenso dell'utente, ad eccezione del cookie tecnico bg_ok, per il quale la base giuridica è il legittimo interesse alla funzionalità del sito.</p>
+
+  <h2>6. Trasferimento dei dati extra-UE</h2>
+  <p>I dati tecnici di navigazione possono essere trasferiti verso server ubicati negli Stati Uniti attraverso Cloudflare e Google LLC. Entrambi i fornitori aderiscono al framework EU-US Data Privacy Framework, che garantisce un livello di protezione adeguato ai sensi dell'art. 45 GDPR.</p>
+
+  <h2>7. Diritti dell'interessato</h2>
+  <p>Ai sensi degli artt. 15-22 del Regolamento UE 2016/679 (GDPR), l'interessato ha diritto di:</p>
+  <ul>
+    <li>accedere ai propri dati personali (art. 15)</li>
+    <li>ottenerne la rettifica (art. 16) o la cancellazione (art. 17)</li>
+    <li>richiedere la limitazione del trattamento (art. 18)</li>
+    <li>opporsi al trattamento (art. 21)</li>
+    <li>richiedere la portabilità dei dati (art. 20)</li>
+  </ul>
+  <p>Le richieste possono essere inoltrate a: <a href="mailto:info@balanceandgrowth.com">info@balanceandgrowth.com</a></p>
+
+  <h2>8. Autorità di controllo</h2>
+  <p>L'interessato ha il diritto di proporre reclamo all'Autorità di controllo competente: <strong>Garante per la Protezione dei Dati Personali</strong>, Piazza Venezia 11, 00187 Roma — <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>.</p>
+
+  <h2>9. Aggiornamenti</h2>
+  <p>La presente informativa è aggiornata al <strong>luglio 2026</strong>. In caso di modifiche significative al sito o alle modalità di trattamento, questa pagina verrà aggiornata.</p>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">Balance <span class="amp">&amp;</span> Growth Advisory</div>
+    <div class="footer-right">
+      <div class="note">un progetto di <strong style="color:var(--paper);font-weight:500">BM Holding Srl</strong> · P.IVA 03829970130 · © 2026</div>
+      <a href="/privacy.html" class="footer-lnk">Privacy &amp; Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  const toggle=document.getElementById('navToggle');
+  const links=document.getElementById('navlinks');
+  toggle.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+</script>
+</body>
+</html>
