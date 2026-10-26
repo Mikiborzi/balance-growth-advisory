@@ -59,9 +59,11 @@ replicare la modifica in tutti e tre i file.
   e straordinaria.
 - Formazione: corso "Business Up" sul business plan (7 moduli).
 - Partner: DSC Solutions (energia/sostenibilità/rifiuti), AI Academy (Starting Work).
-- Contatti pubblici: `info@balanceandgrowth.com` (email visibile sul sito, via
-  Cloudflare Email Routing) · `ceobalanceadvisory@protonmail.com` (nel JSON-LD
-  strutturato) · `+39 331 680 5428` (nel JSON-LD strutturato).
+- Contatti pubblici: `ceobalanceadvisory@protonmail.com` (email visibile sul
+  sito, nel JSON-LD e nelle pagine privacy, IT + EN; dal 26 ottobre 2026) ·
+  `+39 331 680 5428` (nel JSON-LD strutturato). L'indirizzo
+  `info@balanceandgrowth.com` resta attivo in Cloudflare Email Routing ma non
+  è più pubblicato sul sito.
 
 **Regola ferma**: niente risultati, numeri o testimonianze di clienti finché non
 li fornisce Fabio. Non fabbricare prove sociali.
@@ -107,9 +109,9 @@ npx wrangler deploy
   - Ultimo deploy: 2026-06-19 — Version ID: `6cc1afdd-2d5b-40e0-88a9-2515f3e98d39`.
 - ✅ Homepage con 5 servizi, sezione brand, Founder & Partner, formazione, partner.
 - ✅ Sottopagine profilo: `fabio.html` e `michele.html` con foto e timeline.
-- ✅ Email contatti: `info@balanceandgrowth.com` via Cloudflare Email Routing.
+- ✅ Email contatti pubblicata: `ceobalanceadvisory@protonmail.com` (sito IT + EN, privacy).
 - ✅ Immagini ottimizzate (PNG → JPEG, nomi senza spazi, peso ridotto).
-- ✅ Email JSON-LD allineata a `info@balanceandgrowth.com`.
+- ✅ Email JSON-LD allineata a `ceobalanceadvisory@protonmail.com`.
 - ✅ Nav bar uniforme in tutte le pagine, con voce "Una rete di Valore" (#partner).
 - ⚠️ Criticità residue: vedi `TECH-SPEC.md` sezione 10.
 - ⬜ **Prossima fase**: valutare form di contatto. Modifiche ai contenuti solo se
