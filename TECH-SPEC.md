@@ -61,7 +61,7 @@ npx wrangler login    # solo la prima volta / se token scaduto
 npx wrangler deploy
 ```
 
-**Ultimo deployment:** 2026-06-19 — Version ID: `b8a1ba20-4623-4998-911c-9d7d1f174723`
+**Ultimo deployment:** 2026-10-26 — Version ID: `8115f05e-3d8d-4cc2-813b-b966b01a9429`
 
 ---
 

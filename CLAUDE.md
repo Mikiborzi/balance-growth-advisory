@@ -106,7 +106,8 @@ npx wrangler deploy
 - ✅ Deploy su Cloudflare Workers (Worker: `balanceandgrowth`, account Michele).
   - `balanceandgrowth.com` e `www.balanceandgrowth.com` configurati come custom domain.
   - `workers_dev: false` nel `wrangler.jsonc`.
-  - Ultimo deploy: 2026-06-19 — Version ID: `6cc1afdd-2d5b-40e0-88a9-2515f3e98d39`.
+  - Ultimo deploy: 2026-10-26 — Version ID: `8115f05e-3d8d-4cc2-813b-b966b01a9429`.
+  - `public/.assetsignore` esclude `.DS_Store` dal deploy.
 - ✅ Homepage con 5 servizi, sezione brand, Founder & Partner, formazione, partner.
 - ✅ Sottopagine profilo: `fabio.html` e `michele.html` con foto e timeline.
 - ✅ Email contatti pubblicata: `ceobalanceadvisory@protonmail.com` (sito IT + EN, privacy).
